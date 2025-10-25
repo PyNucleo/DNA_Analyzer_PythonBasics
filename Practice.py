@@ -14,7 +14,10 @@ if DNA_Sequence!="STOP":
             Length=len(DNA)
             return Length
         def Base_Number(DNA):
-            Num_A,Num_T,Num_C,Num_G=0,0,0,0
+            Base_Counts={"A":0,"T":0,"G":0,"C":0}
+            for Base in DNA:
+                Base_Counts[Base]+=1
+            return Base_Counts
             for i in DNA:
                 if i=="A":
                     Num_A+=1
