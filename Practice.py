@@ -18,17 +18,6 @@ if DNA_Sequence!="STOP":
             for Base in DNA:
                 Base_Counts[Base]+=1
             return Base_Counts
-            for i in DNA:
-                if i=="A":
-                    Num_A+=1
-                elif i=="T":
-                    Num_T+=1
-                elif i=="G":
-                    Num_G+=1
-                else:
-                    Num_C+=1
-            Base_Numbers={"A":Num_A,"T":Num_T,"G":Num_G,"C":Num_C}
-            return Base_Numbers
         def GC_Content_Per(DNA):
             S = Base_Number(DNA)
             C_Content=S["C"]
